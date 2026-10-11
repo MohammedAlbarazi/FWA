@@ -1,0 +1,65 @@
+{
+  "overall": {
+    "test_claims": 5898,
+    "test_suspicious": 280,
+    "threshold": 0.5,
+    "precision": 0.6409,
+    "recall": 0.9179,
+    "f1": 0.7548,
+    "pr_auc": 0.8506,
+    "pr_auc_random_baseline": 0.0475,
+    "confusion_matrix": {
+      "tn": 5474,
+      "fp": 144,
+      "fn": 23,
+      "tp": 257
+    }
+  },
+  "per_pattern": [
+    {
+      "pattern_type": "abnormal_billing",
+      "planted": 84,
+      "caught": 84,
+      "recall": 1.0
+    },
+    {
+      "pattern_type": "collusion_ring",
+      "planted": 45,
+      "caught": 43,
+      "recall": 0.956
+    },
+    {
+      "pattern_type": "duplicate_claim",
+      "planted": 46,
+      "caught": 32,
+      "recall": 0.696
+    },
+    {
+      "pattern_type": "overutilization",
+      "planted": 49,
+      "caught": 44,
+      "recall": 0.898
+    },
+    {
+      "pattern_type": "procedure_frequency_spike",
+      "planted": 56,
+      "caught": 54,
+      "recall": 0.964
+    }
+  ],
+  "feature_importance": {
+    "cost_ratio": 0.173,
+    "dup_within_1_day": 0.149,
+    "provider_avg_cost_ratio": 0.137,
+    "member_providers": 0.129,
+    "provider_members": 0.086,
+    "member_claims": 0.059,
+    "claims_per_member": 0.057,
+    "top_procedure_share": 0.054,
+    "max_claims_30d": 0.051,
+    "provider_claims": 0.049,
+    "billed_amount": 0.045,
+    "days_to_submit": 0.011,
+    "missing_auth": 0.001
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "overall": {
+    "claims": 19660,
+    "planted_suspicious": 932,
+    "prevalence": 0.0474,
+    "flag_rate": 0.05,
+    "flagged_claims": 983,
+    "precision": 0.3906,
+    "recall": 0.412,
+    "f1": 0.401,
+    "pr_auc": 0.4175,
+    "pr_auc_random_baseline": 0.0474,
+    "confusion_matrix": {
+      "tn": 18129,
+      "fp": 599,
+      "fn": 548,
+      "tp": 384
+    }
+  },
+  "per_pattern": [
+    {
+      "pattern_type": "abnormal_billing",
+      "planted": 272,
+      "caught": 258,
+      "recall": 0.949
+    },
+    {
+      "pattern_type": "collusion_ring",
+      "planted": 150,
+      "caught": 25,
+      "recall": 0.167
+    },
+    {
+      "pattern_type": "duplicate_claim",
+      "planted": 150,
+      "caught": 49,
+      "recall": 0.327
+    },
+    {
+      "pattern_type": "overutilization",
+      "planted": 180,
+      "caught": 50,
+      "recall": 0.278
+    },
+    {
+      "pattern_type": "procedure_frequency_spike",
+      "planted": 180,
+      "caught": 2,
+      "recall": 0.011
+    }
+  ]
+}
