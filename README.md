@@ -121,4 +121,4 @@ The scoring logic is isolated in `scoring.load_artifacts()` / `score_batch()`. T
 
 ## Project files
 
-`generate_data.py` · `train_model.py` · `train_supervised.py` · `rules.py` · `scoring.py` · `graph_analysis.py` · `api.py` · `dashboard_api.py` · `test_api.py` · `dashboard/` · `INTERVIEW_NOTES.md`
+`generate_data.py` · `train_model.py` · `train_supervised.py` · `rules.py` · `scoring.py` · `graph_analysis.py` · `api.py` · `dashboard_api.py` · `test_api.py` · `dashboard/`
